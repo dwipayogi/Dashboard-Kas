@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="masuk.css">
+    <title>Uang Masuk - Formuga</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../beranda/beranda.html">Beranda</a></li>
+            <li class="active"><a href="">Uang Masuk</a></li>
+            <li><a href="../uang keluar/keluar.html">Uang Keluar</a></li>
+            <li><a href="../riwayat/riwayat.html">Riwayat</a></li>
+        </ul>
+        <button class="logout-btn">Keluar</button>
+    </nav>
+
+    <div class="beranda">
+        <h2>Uang Masuk</h2>
+    </div>
+
+    <div class="uang-masuk">
+        <h3>Data Uang Masuk</h3>
+        <div class="masuk-btn" onclick="popupOn()">Tambah Data</div>
+        <table class="data-table">
+            <tr>
+                <th>Tanggal</th>
+                <th>Jumlah</th>
+                <th>Keterangan</th>
+                <th>Aksi</th>
+            </tr>
+            <tr>
+                <td>Thomas Slebew</td>
+                <td>Thomas Slebew</td>
+                <td>Thomas Slebew</td>
+                <td><img class="icon" src="../asset/trash.svg" alt="trash" onclick="deleteOn()">
+                    <img class="icon" src="../asset/edit.svg" alt="edit" onclick="editOn()">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- pop up tambah data -->
+    <div id="popup-container">
+        <div class="popup">
+            <h3>Ubah Data</h3>
+            <div class="data">
+                <form action="">
+                    <table>
+                        <tr>
+                            <td><label>Tanggal</label></td>
+                            <td><input type="date" name="date" required/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Jumlah</label></td>
+                            <td><input type="text" name="jumlah" autocomplete="off" required/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Keterangan</label></td>
+                            <td><input type="text" name="Keterangan" autocomplete="off" required/></td>
+                        </tr>
+                    </table>
+                </form>
+                
+            </div>
+            <input class="batal btn" type="submit" value="batal" onclick="popupOff()">
+            <input class="simpan btn" type="submit" value="simpan" onclick="popupOff()">
+        </div>
+    </div>
+
+    <!-- confirmation -->
+    <div id="confirm-container">
+        <div class="confirmation">
+            <h3>Hapus Data</h3>
+            <p>Apakah anda yakin ingin menghapus data ini?</p>
+            <button class="ya" onclick="deleteOff()">Ya</button>
+            <button class="tidak" onclick="deleteOff()">Tidak</button>
+        </div>
+    </div>
+
+    <!-- pop up edit data -->
+    <div id="edit-container">
+        <div class="popup">
+            <h3>Tambah Data</h3>
+            <div class="data">
+                <form action="">
+                    <table>
+                        <tr>
+                            <td><label>Tanggal</label></td>
+                            <td><input type="date" name="date" required/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Jumlah</label></td>
+                            <td><input type="text" name="jumlah" autocomplete="off" required/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Keterangan</label></td>
+                            <td><input type="text" name="Keterangan" autocomplete="off" required/></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <input class="batal btn" type="submit" value="batal" onclick="editOff()">
+            <input class="simpan btn" type="submit" value="simpan" onclick="editOff()">
+        </div>
+    </div>
+    <script src="../uang keluar/script.js"></script>
+</body>
+</html>

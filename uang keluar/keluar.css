@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Kulim+Park&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Kulim Park', sans-serif;
+}
+nav {
+    width: 20%;
+    height: 100%;
+    background-color: #1C3879;
+    position: fixed;
+    margin: 0;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    left: -20px;
+}
+.active {
+    background-color: #3E67B4;
+}
+nav li:hover {
+    background-color: #3E67B4;
+    border-radius: 5px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.logout-btn {
+    background-color: #C72D2D;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 80%;
+    position: relative;
+    top: 60%;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #991D1D;
+}
+
+.beranda {
+    position: absolute;
+    background-color: #E8AA42;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100px;
+    font-size: 32px;
+    z-index: 1;
+}
+.beranda h2 {
+    margin-left: 22%;
+    padding-top: 8px;
+    font-family: 'Koulen', cursive;
+}
+.uang-masuk {
+    position: absolute;
+    background-color: #1F4690;
+    color: #FFFFFF;
+    width: 75%;
+    min-height: fit-content;
+    height: 500px;
+    top: 21%;
+    left: 22%;
+    border-radius: 5px;
+}
+h3 {
+    font-size: 32px;
+    font-family: 'Koulen', cursive;
+    padding: 16px;
+}
+.masuk-btn {
+    width: 180px;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #4E7ACD;
+    color: #FFFFFF;
+    text-align: center;
+    margin-left: 16px;
+    cursor: pointer;
+}
+.data-table {
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    border: none;
+}
+.data-table tr th {
+    width: 20%;
+    height: 48px;
+    background-color: #E8AA42;
+    color: #000000;
+    font-size: 24px;
+}
+.data-table tr td {
+    font-size: 22px;
+    background-color: #FFE5B4;
+    color: black;
+    height: 260px;
+}
+
+.icon {
+    width: 36px;
+    margin: 10px;
+    cursor: pointer;
+}
+/* pop up tambah data */
+#popup-container {
+    background: rgba(0, 0, 0, 0.24);
+    backdrop-filter: blur(7.6px);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    z-index: 99;
+}
+#edit-container {
+    background: rgba(120, 120, 120, 0.24);
+    backdrop-filter: blur(7.6px);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    z-index: 99;
+}
+.popup {
+    width: 40%;
+    height: 80%;
+    margin: 80px auto;
+    background-color: #E8AA42;
+    border-radius: 5px;
+    font-family: 'Koulen', cursive;
+}
+h3 {
+    color: white;
+    padding: 16px 24px;
+    font-size: 40px;
+}
+.data {
+    width: 90%;
+    height: 200px;
+    background-color: #FFE5B4;
+    margin: 20px auto;
+    padding: 32px 20px;
+}
+label, input {
+    font-size: 24px;
+}
+
+input {
+    width: 100%;
+}
+.btn {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Koulen', cursive;
+    cursor: pointer;
+    color: white;
+}
+.batal {
+    background-color: #C6511F;
+    margin: 0 10px 0 370px;
+}
+.simpan {
+    background-color: #1F4690;
+}
+
+/* confirmation */
+#confirm-container {
+    background: rgba(0, 0, 0, 0.24);
+    backdrop-filter: blur(7.6px);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    z-index: 99;
+}
+.confirmation {
+    width: 40%;
+    height: 35%;
+    margin: 200px auto;
+    background-color: #1F4690;
+    border-radius: 5px;
+    font-family: 'Koulen', cursive;
+    text-align: center;
+    color: white;
+}
+h3 {
+    padding: 16px 24px;
+    font-size: 40px;
+}
+p {
+    margin-bottom: 16px;
+}
+button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Koulen', cursive;
+    cursor: pointer;
+    color: white;
+    margin: 10px;
+}
+.ya {
+    background-color: #27A972;
+}
+.tidak {
+    background-color: #C6511F;
+}
